@@ -11,7 +11,7 @@ Sparkle的工作原理是，把检测逻辑打包进framework，同时提供一�
 
 我把摸索过程中，需要理解的概念和注意的坑整理如下：
 
-###常用脚本
+### 常用脚本
 
 ```bash
 # generate public and private keys
@@ -23,7 +23,7 @@ Sparkle的工作原理是，把检测逻辑打包进framework，同时提供一�
 
 特别要注意的是，上面签名的私钥，一定要跟程序中导入的公钥匹配。我第一次测试的时候，就在这里栽坑了，浪费了有三个小时左右。
 
-###升级包准备
+### 升级包准备
 
 所有的新版App都必须将*.app打成*.zip包。 命名上需要注意的地方有：
 
@@ -36,7 +36,7 @@ Feed文件也作简单说明如下：
 * appcast.xml 和 delta升级包 都由 generate_appcast 负责生成，每次重新run generate_appcast以后，需要更新appcast.xml 和 所有的zip包文件。
 
 
-###配置
+### 配置
 
 常用的设置项有以下这些：（完整的见：https://sparkle-project.org/documentation/customization/）
 
