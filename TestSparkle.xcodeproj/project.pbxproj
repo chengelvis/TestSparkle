@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CC6CA731FE4D35FA88348A1 /* Pods_TestSparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 202539C75D3FBFE0C0E14FDF /* Pods_TestSparkle.framework */; };
+		85EF50211EC3F97E00A6DAFB /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 85EF50201EC3F97E00A6DAFB /* dsa_pub.pem */; };
 		85F416131EC1BBC700C04D6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F416121EC1BBC700C04D6C /* AppDelegate.m */; };
 		85F416161EC1BBC700C04D6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F416151EC1BBC700C04D6C /* main.m */; };
 		85F416191EC1BBC700C04D6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F416181EC1BBC700C04D6C /* ViewController.m */; };
@@ -15,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		202539C75D3FBFE0C0E14FDF /* Pods_TestSparkle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestSparkle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C055A7B9B0D491807A18B2C /* Pods-TestSparkle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSparkle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestSparkle/Pods-TestSparkle.debug.xcconfig"; sourceTree = "<group>"; };
+		85EF50201EC3F97E00A6DAFB /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		85F4160E1EC1BBC700C04D6C /* TestSparkle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSparkle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85F416111EC1BBC700C04D6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		85F416121EC1BBC700C04D6C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		85F4161A1EC1BBC700C04D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85F4161D1EC1BBC700C04D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85F4161F1EC1BBC700C04D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E70DF471C25F8BA3E27D91E3 /* Pods-TestSparkle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSparkle.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestSparkle/Pods-TestSparkle.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CC6CA731FE4D35FA88348A1 /* Pods_TestSparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		306C50E8CFDDEF440A1CAE8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C055A7B9B0D491807A18B2C /* Pods-TestSparkle.debug.xcconfig */,
+				E70DF471C25F8BA3E27D91E3 /* Pods-TestSparkle.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		85F416051EC1BBC700C04D6C = {
 			isa = PBXGroup;
 			children = (
 				85F416101EC1BBC700C04D6C /* TestSparkle */,
 				85F4160F1EC1BBC700C04D6C /* Products */,
+				306C50E8CFDDEF440A1CAE8D /* Pods */,
+				86E9D405A95CF526ABB42B8C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +74,7 @@
 		85F416101EC1BBC700C04D6C /* TestSparkle */ = {
 			isa = PBXGroup;
 			children = (
+				85EF50201EC3F97E00A6DAFB /* dsa_pub.pem */,
 				85F416111EC1BBC700C04D6C /* AppDelegate.h */,
 				85F416121EC1BBC700C04D6C /* AppDelegate.m */,
 				85F416171EC1BBC700C04D6C /* ViewController.h */,
@@ -76,6 +95,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		86E9D405A95CF526ABB42B8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				202539C75D3FBFE0C0E14FDF /* Pods_TestSparkle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85F416221EC1BBC700C04D6C /* Build configuration list for PBXNativeTarget "TestSparkle" */;
 			buildPhases = (
+				AC4F40B40F63FC9A1078C0DE /* [CP] Check Pods Manifest.lock */,
 				85F4160A1EC1BBC700C04D6C /* Sources */,
 				85F4160B1EC1BBC700C04D6C /* Frameworks */,
 				85F4160C1EC1BBC700C04D6C /* Resources */,
+				A3096A5287FF528416D4FC21 /* [CP] Embed Pods Frameworks */,
+				9BFF3617CEAC675A3E5BB2FB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -107,6 +137,7 @@
 				TargetAttributes = {
 					85F4160D1EC1BBC700C04D6C = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = E5LPTX673D;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -135,11 +166,60 @@
 			buildActionMask = 2147483647;
 			files = (
 				85F4161B1EC1BBC700C04D6C /* Assets.xcassets in Resources */,
+				85EF50211EC3F97E00A6DAFB /* dsa_pub.pem in Resources */,
 				85F4161E1EC1BBC700C04D6C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9BFF3617CEAC675A3E5BB2FB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestSparkle/Pods-TestSparkle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3096A5287FF528416D4FC21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestSparkle/Pods-TestSparkle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC4F40B40F63FC9A1078C0DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		85F4160A1EC1BBC700C04D6C /* Sources */ = {
@@ -257,25 +337,33 @@
 		};
 		85F416231EC1BBC700C04D6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C055A7B9B0D491807A18B2C /* Pods-TestSparkle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E5LPTX673D;
 				INFOPLIST_FILE = TestSparkle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kw.TestSparkle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		85F416241EC1BBC700C04D6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E70DF471C25F8BA3E27D91E3 /* Pods-TestSparkle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E5LPTX673D;
 				INFOPLIST_FILE = TestSparkle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kw.TestSparkle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -298,6 +386,7 @@
 				85F416241EC1BBC700C04D6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -11,5 +11,8 @@
 @interface ViewController : NSViewController
 
 
+@property (weak) IBOutlet NSTextField *lbVersion;
+
+
 @end
 

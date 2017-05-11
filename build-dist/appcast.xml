@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="yes"?><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0"><channel><title>TestSparkle-1.1</title>
+<item>
+<title>1.1</title>
+<pubDate>Thu, 11 May 2017 09:46:19 +0800</pubDate>
+<sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
+<enclosure url="http://127.0.0.1/TestSparkle-1.1.zip" sparkle:version="2" sparkle:shortVersionString="1.1" length="1202580" type="application/octet-stream" sparkle:dsaSignature="MC0CFQCO6wDXdb231oR3De5Ktzi/J+DZkwIUI2eSPVojRCX8UAAO3WSUq+953ZM="/>
+</item>
+</channel></rss>

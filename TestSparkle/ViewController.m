@@ -14,6 +14,8 @@
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
+    NSString *version = [NSString stringWithFormat:@"Version %@",[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
+    _lbVersion.stringValue = version;
 }
 
 
